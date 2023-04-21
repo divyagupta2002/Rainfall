@@ -21,7 +21,7 @@ import ipywidgets as widgets
 import plotly
 import plotly.graph_objects as go
 
-data = pd.read_excel('india_-_monthly_rainfall_data_-_1901_to_2002.xlsx')
+data = pd.read_csv('india_monthly_rainfall_data.csv')
 # drop row which has NA
 data = data.dropna()
 row_to_sum = data.iloc[:, 3:15]
@@ -141,7 +141,7 @@ india = json.load(open('state/india_states.geojson'))
 districts = gpd.read_file('district/india_district.geojson')
 
 # # Read in the rainfall data
-df = pd.read_excel('india_-_monthly_rainfall_data_-_1901_to_2002.xlsx')
+df = pd.read_csv('india_monthly_rainfall_data.csv')
 
 # %%
 # combine ladakh and jammu and kashmir area into one in the geojson file

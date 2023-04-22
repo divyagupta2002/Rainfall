@@ -349,6 +349,9 @@ def state_map(month, year, state_id):
 # Create the app
 app = dash.Dash(__name__)
 
+server = app.server
+
+
 # %%
 # Create the layout
 app.layout = html.Div([
@@ -568,4 +571,4 @@ def update_figure(select_month):
 # %%
 # Run the app
 if __name__ == '__main__':
-    app.run_server(port=8000)
+    app.run_server(port=80)

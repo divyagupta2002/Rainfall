@@ -571,4 +571,4 @@ def update_figure(select_month):
 # %%
 # Run the app
 if __name__ == '__main__':
-    app.run_server(port=80)
+    app.run_server(port=8000)
